@@ -1,7 +1,7 @@
 import streamlit as st
 from sentence_transformers import SentenceTransformer
 #  try:
-#      from sentence_transformers import SentenceTransformer
+#      from sentence_transformers import SentenceTransformers
 #      model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 #      USE_EMBEDDINGS = True
 #  except:
