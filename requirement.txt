@@ -1,6 +1,7 @@
 streamlit
-sentence-transformers
+sentence-transformers==2.2.2
 scikit-learn
 numpy
 pypdf
 openai
+torch==2.0.1
