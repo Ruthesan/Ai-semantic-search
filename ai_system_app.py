@@ -1,5 +1,11 @@
 import streamlit as st
-from sentence_transformers import SentenceTransformer
+# from sentence_transformers import SentenceTransformer
+try:
+    from sentence_transformers import SentenceTransformer
+    model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+    USE_EMBEDDINGS = True
+except:
+    USE_EMBEDDINGS = False
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from pypdf import PdfReader
