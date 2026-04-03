@@ -4,7 +4,7 @@ try:
       from sentence_transformers import SentenceTransformers
       model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
       USE_EMBEDDINGS = True
-  except:
+except:
       USE_EMBEDDINGS = False
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
